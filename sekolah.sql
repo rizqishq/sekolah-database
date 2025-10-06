@@ -33,3 +33,14 @@ VALUES
 (4, 'Bahasa Indonesia', 89),
 (5, 'Sosiologi', 84),
 (5, 'Ekonomi', 76);
+
+-- Query Data
+SELECT * FROM siswa;
+
+SELECT nama, jurusan FROM siswa WHERE jurusan = 'IPA';
+
+SELECT s.nama, ROUND(AVG(n.nilai), 2) AS rata_nilai
+FROM siswa s
+JOIN nilai n ON s.id = n.siswa_id
+GROUP BY s.nama
+ORDER BY rata_nilai DESC;
