@@ -44,3 +44,12 @@ FROM siswa s
 JOIN nilai n ON s.id = n.siswa_id
 GROUP BY s.nama
 ORDER BY rata_nilai DESC;
+
+-- Update & Delete Data
+UPDATE siswa SET jurusan = 'IPA' WHERE nama = 'Budi';
+
+DELETE FROM nilai WHERE siswa_id = 5 AND mata_pelajaran = 'Sosiologi';
+
+-- Hasil Akhir
+SELECT * FROM siswa;
+SELECT * FROM nilai;
