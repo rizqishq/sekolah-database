@@ -1,3 +1,7 @@
+-- Nama     : Rizqi SabililHaq
+-- Mentor   : Zaki Maliki
+-- RDBMS    : PostgreSQL
+
 -- Create Table Siswa & Nilai
 CREATE TABLE siswa (
     id INT PRIMARY KEY SERIAL,
